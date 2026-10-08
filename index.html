@@ -12,32 +12,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
-    <header>
+    <header class="flex">
         <h1>S.Q.</h1>
         <nav>
-            <ul>
+            <ul class="flex">
                 <li><a id="about-me" href="index.html">About Me</a></li>
                 <li><a id="proyects" href="proyects.html">Proyects</a></li>
                 <li><a id="experience" href="experience.html">Experience</a></li>
                 <li><a id="contact" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="toggle"><i class="ti ti-sun"></i><!-- <i class="ti ti-moon"></i> --></button>
+        <button class="toggle flex"><i class="ti ti-sun"></i><!-- <i class="ti ti-moon"></i> --></button>
     </header>
-    <main>
-        <div class="card-presentation">
+    <main class="flex">
+        <div class="card-presentation flex">
+
             <div class="profile-pic-container">
-                <img id="profile-pic" src="Retrato%20profesional%20de%20mujer%20con%20rizos%20y%20gafas.png" alt=""/>
+                <img id="profile-pic"
+                     src="Retrato%20profesional%20de%20mujer%20con%20rizos%20y%20gafas.png"
+                     alt=""/>
             </div>
-            <div class="card-description">
-                <h3>Hi, I'm Sofia Quintero</h3>
-                <p>Currently studying Software Development Engineering at ITESO.</p>
+
+            <div class="card-content">
+                <div class="card-description flex">
+                    <p class="span-card">
+                        <span>&lt;SOFTWARE DEVELOPER&gt;</span>
+                    </p>
+                    <h3 class="flex">
+                        Hi, I'm
+                        <span>SOFIA QUINTERO</span>
+                    </h3>
+                    <p>
+                        Currently building projects and strengthening my foundations
+                        in software development.
+                    </p>
+                </div>
+
+                <div class="card-extrainfo flex">
+                    <p>BASED IN<span>GUADALAJARA, MX</span></p>
+                    <p>STUDYING<span>SDE at ITESO</span></p>
+                </div>
             </div>
         </div>
-        <div class="home-buttons">
-            <button class="main-button colorful-button" type="button">See proyects<i class="fa-solid fa-arrow-right"></i></button>
+
+
+        <!--<div class="home-buttons flex">
+            <button class="main-button colorful-button flex" type="button">See proyects<i class="fa-solid fa-arrow-right"></i></button>
             <button class="main-button border-button" type="button">More about me</button>
-        </div>
+        </div> -->
     </main>
 </body>
 </html>
