@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
-<header>
-    <h1>S.Q</h1>
-    <ul>
-        <li><h2><a href="index.html">About Me</a></h2></li>
-        <li><h2><a href="proyects.html">Proyects</a></h2></li>
-        <li><h2><a href="experience.html">Experience</a></h2></li>
-        <li><h2><a href="contact.html">Contact</a></h2></li>
-    </ul>
-    <button type="button">Toogle</button>
-</header>
 <body>
-    <div class="card-presentation">
-        <img src="Retrato%20profesional%20de%20mujer%20con%20rizos%20y%20gafas.png" alt=""/>
-        <div class="card-p-description">
-            <h3>Hi, I'm Sofia Quintero</h3>
-            <p>Currently studying Software Developmente Engineering at ITESO.</p>
+    <header>
+        <h1>S.Q.</h1>
+        <nav>
+            <ul>
+                <li><a id="about-me" href="index.html">About Me</a></li>
+                <li><a id="proyects" href="proyects.html">Proyects</a></li>
+                <li><a id="experience" href="experience.html">Experience</a></li>
+                <li><a id="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="toggle"><i class="ti ti-sun"></i><!-- <i class="ti ti-moon"></i> --></button>
+    </header>
+    <main>
+        <div class="card-presentation">
+            <div class="profile-pic-container">
+                <img id="profile-pic" src="Retrato%20profesional%20de%20mujer%20con%20rizos%20y%20gafas.png" alt=""/>
+            </div>
+            <div class="card-description">
+                <h3>Hi, I'm Sofia Quintero</h3>
+                <p>Currently studying Software Development Engineering at ITESO.</p>
+            </div>
         </div>
-    </div>
-    <div class="home-buttons">
-        <button type="button">See Proyects</button>
-        <button type="button">More about me</button>
-    </div>
-
+        <div class="home-buttons">
+            <button class="main-button colorful-button" type="button">See proyects<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="main-button border-button" type="button">More about me</button>
+        </div>
+    </main>
 </body>
 </html>
