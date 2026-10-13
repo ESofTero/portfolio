@@ -53,8 +53,98 @@
                     <p>STUDYING<span>SDE at ITESO</span></p>
                 </div>
             </div>
+
         </div>
 
+        <div class="proyects-content flex">
+            <div class="proyect-card flex">
+                <div class="proyect-main-content flex">
+                    <div class="proyect-info flex">
+                        <p class="proyect-number">
+                            01
+                        </p>
+                        <h3 class="proyect-name">
+                            LYED<br>TOOLKIT
+                        </h3>
+                        <p class="proyect-description">
+                            Interactive toolkit<br>for discrete mathematics.
+                        </p>
+                    </div>
+                    <!-- Primer test img -->
+                    <div class="project-preview hidden">
+                        <svg viewBox="0 0 400 400"
+                             role="img"
+                             aria-label="Vista previa de LYED Toolkit">
+                            <defs>
+                                <filter id="lyed-organico"
+                                        x="-50%" y="-50%"
+                                        width="200%" height="200%">
+                                    <feTurbulence
+                                            type="fractalNoise"
+                                            baseFrequency="0.005 0.007"
+                                            numOctaves="1"
+                                            seed="7"
+                                            result="ruido">
+                                        <animate
+                                                attributeName="baseFrequency"
+                                                values="0.005 0.007;0.008 0.005;0.005 0.007"
+                                                dur="18s"
+                                                repeatCount="indefinite"/>
+                                    </feTurbulence>
+
+                                    <feDisplacementMap
+                                            in="SourceGraphic"
+                                            in2="ruido"
+                                            scale="20"
+                                            xChannelSelector="R"
+                                            yChannelSelector="G"/>
+
+                                    <feGaussianBlur stdDeviation="20"/>
+                                </filter>
+
+                                <mask id="lyed-mascara"
+                                      maskUnits="userSpaceOnUse"
+                                      x="0" y="0" width="400" height="400">
+                                    <circle
+                                            cx="200"
+                                            cy="200"
+                                            r="108"
+                                            fill="white"
+                                            filter="url(#lyed-organico)">
+                                        <animate
+                                                attributeName="r"
+                                                values="106;112;106"
+                                                dur="16s"
+                                                repeatCount="indefinite"/>
+                                    </circle>
+                                </mask>
+                            </defs>
+
+                            <image
+                                    href="./imgs/img.png"
+                                    width="400"
+                                    height="400"
+                                    preserveAspectRatio="xMidYMid slice"
+                                    mask="url(#lyed-mascara)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="proyect-tags flex">
+                    <div class="tags flex">
+                        <p class="proyect-tech">
+                            JavaScript
+                        </p>
+                        <p class="proyect-tech">
+                            HTML
+                        </p>
+                        <p class="proyect-tech">
+                            CSS
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
 
         <!--<div class="home-buttons flex">
             <button class="main-button colorful-button flex" type="button">See proyects<i class="fa-solid fa-arrow-right"></i></button>
